@@ -11,6 +11,26 @@
 *.sln.docstates
 *.env
 
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Scrapy
+.scrapy
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs
+*.log
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
