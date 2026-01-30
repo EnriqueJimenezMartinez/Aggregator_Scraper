@@ -94,19 +94,20 @@ rm temp_*.json
 Aggregator_Scraper/
 │
 ├── news_aggregator/              # Proyecto Scrapy
-│   ├── scrapy.cfg                # Configuración de deployment
-│   └── news_aggregator/          # Módulo Python
-│       ├── middlewares.py        # Middlewares personalizados
-│       ├── settings.py           # Configuración del proyecto
-│       └── spiders/              # Directorio de spiders
-│           ├── __init__.py
-│           ├── lavoz.py         # Spider La Voz (CSS)
-│           ├── elpais.py        # Spider El País (XPath)
-│           └── marca.py         # Spider Marca (Mixto)
+│   ├── __init__.py               # Inicializador del módulo
+│   ├── items.py                  # Definición de items 
+│   ├── middlewares.py            # Middlewares personalizados
+│   ├── pipelines.py              # Pipelines de procesamiento
+│   ├── settings.py               # Configuración del proyecto
+│   └── spiders/                  # Directorio de spiders
+│       ├── __init__.py
+│       ├── lavoz.py              # Spider La Voz (CSS)
+│       ├── elpais.py             # Spider El País (XPath)
+│       └── marca.py              # Spider Marca (Mixto)
 │
-├── news_data.json               # Archivo de salida con los datos
-├── .gitignore                   # Archivos ignorados por Git
-└── README.md                    # Este archivo
+├── news_data.json                # Archivo de salida con los datos
+├── .gitignore                    # Archivos ignorados por Git
+└── README.md                     # Este archivo
 ```
 
 ##  Formato de Salida
